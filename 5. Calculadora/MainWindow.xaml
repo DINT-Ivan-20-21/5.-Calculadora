@@ -16,17 +16,25 @@
         Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition
+                Height="2*" />
+            <RowDefinition
                 Height="1*" />
             <RowDefinition
-                Height="2*" />
+                Height="1*" />
+            <RowDefinition
+                Height="1*" />
+            <RowDefinition
+                Height="50" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition
-                Width="1*" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Border
             Grid.Row="0"
             Grid.Column="0"
+            Grid.ColumnSpan="3"
             BorderBrush="Black"
             BorderThickness="1">
             <Viewbox
@@ -38,129 +46,106 @@
             </Viewbox>
 
         </Border>
-        <Grid
+        <Button
             Grid.Row="1"
-            Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition
-                    Height="4*" />
-                <RowDefinition
-                    Height="4*" />
-                <RowDefinition
-                    Height="4*" />
-                <RowDefinition
-                    Height="2*" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition
-                    Width="1*" />
-                <ColumnDefinition
-                    Width="1*" />
-                <ColumnDefinition
-                    Width="1*" />
-            </Grid.ColumnDefinitions>
-
-            <Button
-                Grid.Row="0"
-                Grid.Column="0"
-                Margin="0,10,5,5"
-                Tag="1"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>1</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="0"
-                Grid.Column="1"
-                Margin="5,10,5,5"
-                Tag="2"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>2</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="0"
-                Grid.Column="2"
-                Margin="5,10,0,5"
-                Tag="3"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>3</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="1"
-                Grid.Column="0"
-                Margin="0,5,5,5"
-                Tag="4"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>4</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="1"
-                Grid.Column="1"
-                Margin="5,5,5,5"
-                Tag="5"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>5</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                Margin="5,5,0,5"
-                Tag="6"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>6</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="2"
-                Grid.Column="0"
-                Margin="0,5,5,5"
-                Tag="7"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>7</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="2"
-                Grid.Column="1"
-                Margin="5,5,5,5"
-                Tag="8"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>8</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="2"
-                Grid.Column="2"
-                Margin="5,5,0,5"
-                Tag="9"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>9</TextBlock>
-                </Viewbox>
-            </Button>
-            <Button
-                Grid.Row="3"
-                Grid.Column="0"
-                Margin="0,5,0,0"
-                Grid.ColumnSpan="3"
-                Tag="0"
-                Click="Button_Click">
-                <Viewbox>
-                    <TextBlock>0</TextBlock>
-                </Viewbox>
-            </Button>
-        </Grid>
+            Grid.Column="0"
+            Margin="0,10,5,5"
+            Tag="1"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>1</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5,10,5,5"
+            Tag="2"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>2</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Margin="5,10,0,5"
+            Tag="3"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>3</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Margin="0,5,5,5"
+            Tag="4"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>4</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="5,5,5,5"
+            Tag="5"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>5</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="5,5,0,5"
+            Tag="6"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>6</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Margin="0,5,5,5"
+            Tag="7"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>7</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="5,5,5,5"
+            Tag="8"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>8</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="5,5,0,5"
+            Tag="9"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>9</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            Margin="0,5,0,0"
+            Grid.ColumnSpan="3"
+            Tag="0"
+            Click="Button_Click">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
     </Grid>
 </Window>
