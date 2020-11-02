@@ -13,5 +13,9 @@ namespace _5.Calculadora
     /// </summary>
     public partial class App : Application
     {
+        public void Button_Click(object sender, RoutedEventArgs e)
+        {
+            (MainWindow as MainWindow).Button_Click(sender, e);
+        }
     }
 }

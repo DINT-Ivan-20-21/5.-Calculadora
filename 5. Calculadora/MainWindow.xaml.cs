@@ -12,8 +12,7 @@ namespace _5.Calculadora
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             numero_TextBlock.Text += button.Tag.ToString();
