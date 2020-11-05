@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace _5.Calculadora
 {
@@ -9,7 +10,8 @@ namespace _5.Calculadora
     {
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            (MainWindow as MainWindow).Button_Click(sender, e);
+            Button button = sender as Button;
+            ((MainWindow as MainWindow).FindName("numero_TextBlock") as TextBlock).Text += button.Tag.ToString();
         }
     }
 }

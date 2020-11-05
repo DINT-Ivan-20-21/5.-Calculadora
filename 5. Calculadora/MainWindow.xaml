@@ -34,6 +34,13 @@
                 <TextBlock x:Name="numero_TextBlock" />
             </Viewbox>
         </Border>
-        <Button Grid.Column="0" Grid.Row="1"/>
+        <Button Grid.Column="0"
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
+                Tag="0">
+            <Viewbox>
+                <TextBlock>0</TextBlock>
+            </Viewbox>
+        </Button>
     </Grid>
 </Window>
